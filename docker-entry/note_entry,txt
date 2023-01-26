@@ -1,0 +1,3 @@
+docker run -it belajar:entry -s localhost -c 3306 -u saputra -p indo11
+this database is localhost with port 3306 whose saputra and the password is indo11
+
