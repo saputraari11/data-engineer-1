@@ -1,0 +1,11 @@
+sys.argv -> array
+
+python3 pythonArgumen.py a b c
+['pythonArgumen.py', 'a', 'b', 'c']
+
+
+
+
+argParser
+
+numpy lebih efiesien karena dapat membuat variable lebih sedikit dalam process nya

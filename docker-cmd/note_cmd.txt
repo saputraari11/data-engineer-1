@@ -1,0 +1,3 @@
+docker run -it belajar:cmd -s localhost -c 3306 -u saputra -p indo11
+docker: Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: exec: "-s": executable file not found in $PATH: unknown.
+ERRO[0000] error waiting for container: context canceled 

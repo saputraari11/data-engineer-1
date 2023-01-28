@@ -1,0 +1,25 @@
+# Create pd_temp
+buat tabel dari pandas
+pd_temp = pd.DataFrame(np.random.random(10))
+
+# Create spark_temp from pd_temp
+buat temp tabel di spark
+spark_temp = spark.createDataFrame(pd_temp)
+
+# Examine the tables in the catalog
+cek catalog apa sudah ada di spark
+print(spark.catalog.listTables())
+
+# Add spark_temp to the catalog
+ubah tabel tadi jadi catalog
+spark_temp.createOrReplaceTempView("temp")
+
+# Examine the tables in the catalog again
+cek catalog lagi
+print(spark.catalog.listTables())
+
+spark cluster merupakan driver yang sudah dibagi ketika membuat awal di spark
+
+kita jalanin query di spark dengan menggunakan tabel yang sudah dimasukan ke cluster 
+
+caranya buat tabel/df dulu,terus pindah tabel ke catalog agar bisa sql menjalankan query 

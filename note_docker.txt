@@ -1,0 +1,62 @@
+docker registry -> repository image 
+
+docker image -> source code nya
+
+docker file -> buat source code nya 
+
+docker container -> app nya 
+
+docker file build jadi docker image 
+
+docker image pull/push docker registry yang diperlukan
+
+docker image run jadi docker container 
+
+
+1 images bisa buat banyak container 
+
+cara buat container ialah 
+
+docker container create --name container_name image_name:image_tag
+
+cara buat container dan juga membedakan portnya ialah 
+
+docker container create --name container_name -p port_baru:port_default_server image_name:image_tag
+
+docker compose itu buat ngatur config database,server lain,images,container dll
+
+cara create nya docker-compose up -d 
+
+
+docker volume itu ialah volume atau tempat yang disediakan docker sendiri buat backup data yang ingin kita mount
+
+contoh 
+
+buat volume nya dulu 
+
+docker volume create nama_volume
+
+volume nya udah ke create 
+
+setelah itu kalau mau make volume bisa ketika create container atau docker-compose 
+
+contoh 
+
+docker container create --name nama_container -p port_baru:port_default -v nama_volume_docker/nama_folder_lokal:tempat_penyimpanan_image_itu_sendiri nama_image:tag_image
+
+flownya
+
+dockerFile -> docker image -> docker container
+
+volume dan docker yml sangat penting ketika membuat container atau jalanin imagenya 
+
+docker network -> docker yang mengatur satu jaringan localhost,jadi setiap container bisa dijadikan satu network agar bisa terhubung satu sama lain 
+
+cara buat network ialah 
+
+docker network create nama_network 
+
+cara koneknya 
+
+docker network connect nama_network container_name nya 
+

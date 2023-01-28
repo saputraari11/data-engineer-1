@@ -1,0 +1,10 @@
+Is my data too big to work with on a single machine?
+Can my calculations be easily parallelized?
+
+
+The Spark DataFrame was designed to behave a lot like a SQL table (a table with variables in the columns and observations in the rows). Not only are they easier to understand, 
+DataFrames are also more optimized for complicated operations than RDDs.
+
+
+When using RDDs, it's up to the data scientist to figure out the right way to optimize the query, but the DataFrame implementation has much of this optimization built in!
+

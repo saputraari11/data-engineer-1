@@ -1,0 +1,46 @@
+.bck itu backup file 
+
+manipulating dengan bash hanya mkdir mv cp cd ls 
+
+rename,pindah,hapus,buat 
+
+Use less seasonal/spring.csv seasonal/summer.csv to view those two files in that order. Press spacebar to page down, :n to go to the second file, and :q to quit.
+
+less file1 file2 ...etc
+
+pindah file pake :n 
+keluar :q 
+
+head dan tail buat menampilkan row dari atas dan bawah berasal dari file 
+
+tail -n +, (+) => except the number line,artinya misal +5 => selain 5 baris dari awal
+cut -f 1 -d , nama_file
+
+fungsi cut itu ngambil columns dan isinya 
+
+-f => field nya 
+-d => delimeternya 
+
+command history
+
+!{nomer command}
+
+!5 => jalanin perintah nomer 5 sebelumnya
+
+!head => {command_terakhir misal head jadi ngamabil perintah terakhir head }
+
+grep can search for patterns as well; we will explore those in the next course. What's more important right now is some of grep's more common flags:
+
+-c: print a count of matching lines rather than the lines themselves
+-h: do not print the names of files when searching multiple files
+-i: ignore case (e.g., treat "Regression" and "regression" as matches)
+-l: print the names of files that contain matches, not the matches
+-n: print line numbers for matching lines
+-v: invert the match, i.e., only show lines that don't match
+
+
+grep buat searching 
+
+paste buat join 
+
+paste -d {karakter} nama_file{1,2,....}
