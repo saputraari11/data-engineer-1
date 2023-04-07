@@ -23,6 +23,10 @@ cara buat container dan juga membedakan portnya ialah
 
 docker container create --name container_name -p port_baru:port_default_server image_name:image_tag
 
+atau biasanya pakai cara ini 
+
+docker run --name psql-coba -e POSTGRES_USER=saputra -e POSTGRES_PASSWORD=saputra11 -p 5430:5432 -d postgres:14
+
 docker compose itu buat ngatur config database,server lain,images,container dll
 
 cara create nya docker-compose up -d 
